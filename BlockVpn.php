@@ -19,7 +19,7 @@ $response = [
     'country' => $country,
     'company_domain' => $company_domain,
     'local_time' => $local_time,
-    'server' => (($vpn || $proxy === 1) ? '<p style="color:red;">Dsconnection</p>' : '<p style="color:green;">Connection</p>')
+    'server' => (($vpn || $proxy === 1) ? '<p style="color:red;">Disconnection</p>' : '<p style="color:green;">Connection</p>')
 ];
 
 echo json_encode($response);
